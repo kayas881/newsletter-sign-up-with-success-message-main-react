@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --Tomato: #ff6257;
+
+  /* ### Neutral */
+
+  --Dark-Slate-Grey: #242742;
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: #9294a0;
+  --White: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@media screen and (min-width: 1024px) {
+  body, html {
+    min-height: 100vh; 
+    /* using min height instead of height avoids the top part from disappearing when reducing the vertical size of the screen */
+    background-color: #242742;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

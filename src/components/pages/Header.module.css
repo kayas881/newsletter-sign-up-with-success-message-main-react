@@ -1,0 +1,10 @@
+header {
+    background: white url("../images/illustration-sign-up-mobile.svg") no-repeat center center/cover;
+}
+
+@media screen and (min-width:1024px) {
+    header {
+        background-image: url('../images/illustration-sign-up-desktop.svg');
+        background-size: 89%;
+    }
+}
